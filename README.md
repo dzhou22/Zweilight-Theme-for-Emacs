@@ -1,2 +1,3 @@
-# zweilight-emacs
-Zweilight theme for Emacs
+# Zweilight theme for Emacs
+
+Work in progress.
