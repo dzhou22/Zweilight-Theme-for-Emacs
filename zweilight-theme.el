@@ -55,7 +55,7 @@
     ("zweilight-orange"   . "#8584ae")
     ("zweilight-yellow"   . "#b4f5fe")
     ("zweilight-yellow-1" . "#efef80")
-    ("zweilight-yellow-2" . "#D0BF8F")
+    ("zweilight-yellow-2" . "#ffe000")
     ("zweilight-green-1"  . "#4c406d")
     ("zweilight-green"    . "#4c406d")
     ("zweilight-green+1"  . "#1b1a24")
