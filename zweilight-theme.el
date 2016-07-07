@@ -1039,7 +1039,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(sh-quoted-exec ((t (:foreground ,zweilight-red))))
 ;;;;; show-paren
    `(show-paren-mismatch ((t (:foreground ,zweilight-red+1 :background ,zweilight-bg+3 :weight bold))))
-   `(show-paren-match ((t (:background ,zweilight-bg+3 :weight bold))))
+   `(show-paren-match ((t (:foreground ,zweilight-yellow :background ,zweilight-bg+3 :weight bold))))
 ;;;;; smart-mode-line
    ;; use (setq sml/theme nil) to enable Zweilight for sml
    `(sml/global ((,class (:foreground ,zweilight-fg :weight bold))))
