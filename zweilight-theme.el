@@ -70,7 +70,9 @@
     ("zweilight-blue-3"   . "#5C888B")
     ("zweilight-blue-4"   . "#ffe000")
     ("zweilight-blue-5"   . "#1b1a24")
-    ("zweilight-magenta"  . "#DC8CC3"))
+    ("zweilight-magenta"  . "#DC8CC3")
+    ("zweilight-1"        . "#1f1d2e")
+    ("zweilight-2"        . "#211f30"))
   "List of Zweilight colors.
 Each element has the form (NAME . HEX).
 
@@ -906,7 +908,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-formula ((t (:foreground ,zweilight-yellow-2))))
    `(org-headline-done ((t (:foreground ,zweilight-green+3))))
    `(org-hide ((t (:foreground ,zweilight-bg-1))))
-   `(org-level-1 ((t (:foreground ,zweilight-orange))))
+   `(org-level-1 ((t (:weight bold :foreground ,zweilight-orange))))
    `(org-level-2 ((t (:foreground ,zweilight-green+4))))
    `(org-level-3 ((t (:foreground ,zweilight-blue-1))))
    `(org-level-4 ((t (:foreground ,zweilight-yellow-2))))
@@ -1208,6 +1210,10 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; yascroll
    `(yascroll:thumb-text-area ((t (:background ,zweilight-bg-1))))
    `(yascroll:thumb-fringe ((t (:background ,zweilight-bg-1 :foreground ,zweilight-bg-1))))
+
+;;;;; highlight-indent-guides
+   `(highlight-indent-guides-odd-face ((t (:background ,zweilight-1))))
+   `(highlight-indent-guides-even-face ((t (:background ,zweilight-2))))
    ))
 
 ;;; Theme Variables
