@@ -98,7 +98,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(default ((t (:foreground ,zweilight-fg :background ,zweilight-bg))))
    `(cursor ((t (:foreground ,zweilight-fg :background ,zweilight-yellow))))
    `(escape-glyph ((t (:foreground ,zweilight-cyan :bold t))))
-   `(fringe ((t (:foreground ,zweilight-fg :background ,zweilight-grey))))
+   `(fringe ((t (:foreground ,zweilight-fg :background ,zweilight-bg))))
    `(header-line ((t (:foreground ,zweilight-cyan
                                   :background ,zweilight-blue
                                   :box (:line-width -1 :style released-button)))))
@@ -576,14 +576,13 @@ Also bind `class' to ((class color) (min-colors 89))."
           :box nil))))
    `(helm-source-header
      ((t (:foreground ,zweilight-cyan
-          :background ,zweilight-blue
           :underline nil
           :weight bold
-          :box (:line-width -1 :style released-button)))))
+          :box nil))))
    `(helm-selection ((t (:background ,zweilight-grey :underline nil))))
    `(helm-selection-line ((t (:background ,zweilight-grey))))
    `(helm-visible-mark ((t (:foreground ,zweilight-bg :background ,zweilight-yellow))))
-   `(helm-candidate-number ((t (:foreground ,zweilight-yellow :background ,zweilight-blue))))
+   `(helm-candidate-number ((t (:foreground nil :background nil))))
    `(helm-separator ((t (:foreground ,zweilight-pink :background ,zweilight-bg))))
    `(helm-time-zone-current ((t (:foreground ,zweilight-fg-1 :background ,zweilight-bg))))
    `(helm-time-zone-home ((t (:foreground ,zweilight-pink :background ,zweilight-bg))))
@@ -598,11 +597,12 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(helm-buffer-process ((t (:foreground ,zweilight-orange :background ,zweilight-bg))))
    `(helm-buffer-saved-out ((t (:foreground ,zweilight-fg :background ,zweilight-bg))))
    `(helm-buffer-size ((t (:foreground ,zweilight-grey+1 :background ,zweilight-bg))))
-   `(helm-ff-directory ((t (:foreground ,zweilight-orange :background ,zweilight-bg :weight bold))))
+   `(helm-ff-directory ((t (:foreground ,zweilight-cyan :background ,zweilight-bg))))
    `(helm-ff-file ((t (:foreground ,zweilight-fg :background ,zweilight-bg :weight normal))))
-   `(helm-ff-executable ((t (:foreground ,zweilight-fg-1 :background ,zweilight-bg :weight normal))))
-   `(helm-ff-invalid-symlink ((t (:foreground ,zweilight-pink :background ,zweilight-bg :weight bold))))
-   `(helm-ff-symlink ((t (:foreground ,zweilight-cyan :background ,zweilight-bg :weight bold))))
+   `(helm-ff-dotted-directory ((t (:foreground ,zweilight-fg-1 :background ,zweilight-bg :weight normal))))
+   `(helm-ff-executable ((t (:foreground ,zweilight-green :background ,zweilight-bg :weight normal))))
+   `(helm-ff-invalid-symlink ((t (:foreground ,zweilight-orange :background ,zweilight-bg :slant italic))))
+   `(helm-ff-symlink ((t (:foreground ,zweilight-fg :background ,zweilight-bg :slant italic))))
    `(helm-ff-prefix ((t (:foreground ,zweilight-bg :background ,zweilight-cyan :weight normal))))
    `(helm-grep-cmd-line ((t (:foreground ,zweilight-orange :background ,zweilight-bg))))
    `(helm-grep-file ((t (:foreground ,zweilight-fg :background ,zweilight-bg))))
@@ -610,7 +610,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(helm-grep-lineno ((t (:foreground ,zweilight-grey+1 :background ,zweilight-bg))))
    `(helm-grep-match ((t (:foreground nil :background nil :inherit helm-match))))
    `(helm-grep-running ((t (:foreground ,zweilight-pink :background ,zweilight-bg))))
-   `(helm-match ((t (:foreground ,zweilight-fg :background ,zweilight-blue :weight bold))))
+   `(helm-match ((t (:foreground ,zweilight-cyan :weight bold))))
    `(helm-moccur-buffer ((t (:foreground ,zweilight-orange :background ,zweilight-bg))))
    `(helm-mu-contacts-address-face ((t (:foreground ,zweilight-grey+1 :background ,zweilight-bg))))
    `(helm-mu-contacts-name-face ((t (:foreground ,zweilight-fg :background ,zweilight-bg))))
