@@ -1145,14 +1145,14 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; whitespace-mode
    `(whitespace-space ((t (:background ,zweilight-grey :foreground ,zweilight-grey))))
    `(whitespace-hspace ((t (:background ,zweilight-grey :foreground ,zweilight-grey))))
-   `(whitespace-tab ((t (:background ,zweilight-red-pastel+3))))
+   `(whitespace-tab ((t (:background ,zweilight-bg+3))))
    `(whitespace-newline ((t (:foreground ,zweilight-grey))))
-   `(whitespace-trailing ((t (:background ,zweilight-pink))))
+   `(whitespace-trailing ((t (:background ,zweilight-bg+3))))
    `(whitespace-line ((t (:background ,zweilight-bg :foreground ,zweilight-pink+1))))
    `(whitespace-space-before-tab ((t (:background ,zweilight-fg :foreground ,zweilight-fg))))
-   `(whitespace-indentation ((t (:background ,zweilight-cyan :foreground ,zweilight-pink))))
+   `(whitespace-indentation ((t (:background ,zweilight-bg :foreground ,zweilight-fg-1))))
    `(whitespace-empty ((t (:background ,zweilight-cyan))))
-   `(whitespace-space-after-tab ((t (:background ,zweilight-cyan :foreground ,zweilight-pink))))
+   `(whitespace-space-after-tab ((t (:background ,zweilight-bg :foreground ,zweilight-fg-1))))
 ;;;;; wanderlust
    `(wl-highlight-folder-few-face ((t (:foreground ,zweilight-red-pastel+2))))
    `(wl-highlight-folder-many-face ((t (:foreground ,zweilight-red-pastel+3))))
