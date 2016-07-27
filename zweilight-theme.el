@@ -40,6 +40,8 @@
     ("zweilight-orange"        . "#ffa500")
     ("zweilight-blue"          . "#0bafed")
     ("zweilight-green"         . "#65ba08")
+    ("zweilight-red"           . "#E81A14")
+    ("zweilight-red-1"         . "#CF1712")
     ("zweilight-pink"          . "#ee11dd")
     ("zweilight-pink+1"        . "#DC8CC3")
     ("zweilight-grey+1"        . "#656555")
@@ -1082,14 +1084,18 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(speedbar-separator-face ((t (:foreground ,zweilight-bg :background ,zweilight-blue))))
    `(speedbar-tag-face ((t (:foreground ,zweilight-cyan))))
 ;;;;; tabbar
+   `(tabbar-default ((t (:foreground ,zweilight-fg
+                        :background ,zweilight-bg+3))))
    `(tabbar-button ((t (:foreground ,zweilight-fg
-                                    :background ,zweilight-bg))))
-   `(tabbar-selected ((t (:foreground ,zweilight-fg
-                                      :background ,zweilight-bg
-                                      :box (:line-width -1 :style pressed-button)))))
+                        :background ,zweilight-bg+3))))
    `(tabbar-unselected ((t (:foreground ,zweilight-fg
-                                        :background ,zweilight-grey
-                                        :box (:line-width -1 :style released-button)))))
+                            :background ,zweilight-bg+3))))
+   `(tabbar-selected ((t (:foreground ,zweilight-bg+3
+                           :background ,zweilight-blue))))
+   `(tabbar-modified ((t (:foreground ,zweilight-red
+                          :background ,zweilight-bg+3))))
+   `(tabbar-selected-modified ((t (:foreground ,zweilight-bg+3
+                                   :background ,zweilight-red-1 ))))
 ;;;;; term
    `(term-color-black ((t (:foreground ,zweilight-bg
                                        :background ,zweilight-blue))))
