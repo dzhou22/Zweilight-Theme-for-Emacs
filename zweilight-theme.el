@@ -250,15 +250,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(avy-lead-face
      ((t (:foreground ,zweilight-orange :background ,zweilight-bg :inverse-video nil :weight bold))))
 ;;;;; company-mode
-   `(company-tooltip ((t (:foreground ,zweilight-fg :background ,zweilight-grey))))
+   `(company-tooltip ((t (:foreground ,zweilight-fg :background ,zweilight-bg+3))))
    `(company-tooltip-annotation ((t (:foreground ,zweilight-fg :background ,zweilight-grey))))
    `(company-tooltip-annotation-selection ((t (:foreground ,zweilight-fg :background ,zweilight-blue))))
-   `(company-tooltip-selection ((t (:foreground ,zweilight-fg :background ,zweilight-blue))))
-   `(company-tooltip-mouse ((t (:background ,zweilight-blue))))
-   `(company-tooltip-common ((t (:foreground ,zweilight-fg-1))))
-   `(company-tooltip-common-selection ((t (:foreground ,zweilight-fg-1))))
+   `(company-tooltip-selection ((t (:foreground ,zweilight-bg :background ,zweilight-blue))))
+   `(company-tooltip-mouse ((t (:foreground ,zweilight-bg :background ,zweilight-blue))))
+   `(company-tooltip-common ((t (:foreground ,zweilight-cyan :weight bold))))
+   `(company-tooltip-common-selection ((t (:foreground ,zweilight-cyan :weight bold))))
    `(company-scrollbar-fg ((t (:background ,zweilight-blue))))
-   `(company-scrollbar-bg ((t (:background ,zweilight-fg))))
+   `(company-scrollbar-bg ((t (:background ,zweilight-grey-1))))
    `(company-preview ((t (:background ,zweilight-fg-1))))
    `(company-preview-common ((t (:foreground ,zweilight-fg-1 :background ,zweilight-blue))))
 ;;;;; bm
