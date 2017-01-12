@@ -1213,7 +1213,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ansi-color-names-vector [,zweilight-bg ,zweilight-pink ,zweilight-fg-1 ,zweilight-cyan
                                           ,zweilight-cyan-1 ,zweilight-pink+1 ,zweilight-orange ,zweilight-fg])
 ;;;;; fill-column-indicator
-   `(fci-rule-color ,zweilight-bg+3)
+   `(fci-rule-color ,zweilight-fg-1)
 ;;;;; nrepl-client
    `(nrepl-message-colors
      '(,zweilight-pink ,zweilight-fg ,zweilight-cyan ,zweilight-fg-1 ,zweilight-yellow
@@ -1286,6 +1286,5 @@ This requires library `rainbow-mode'.")
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; indent-tabs-mode: nil
-;; eval: (when (require 'rainbow-mode nil t) (rainbow-mode 1))
 ;; End:
 ;;; zweilight-theme.el ends here
