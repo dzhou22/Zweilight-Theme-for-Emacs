@@ -619,6 +619,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; helm-swoop
    `(helm-swoop-target-line-face ((t (:foreground ,zweilight-fg :background ,zweilight-grey))))
    `(helm-swoop-target-word-face ((t (:foreground ,zweilight-cyan :background ,zweilight-fg :weight bold))))
+;;;;; highlight-numbers
+   `(highlight-numbers-number ((t (:foreground ,zweilight-yellow))))
 ;;;;; hl-line-mode
    `(hl-line-face ((,class (:background ,zweilight-bg+3))
                    (t :weight bold)))
@@ -627,6 +629,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; hl-sexp
    `(hl-sexp-face ((,class (:background ,zweilight-grey))
                    (t :weight bold)))
+;;;;; hlinum
+   `(linum-highlight-face ((t (:foreground ,zweilight-fg-1 :background ,zweilight-bg+3))))
 ;;;;; hydra
    `(hydra-face-red ((t (:foreground ,zweilight-red-pastel+3 :background ,zweilight-bg))))
    `(hydra-face-amaranth ((t (:foreground ,zweilight-red-pastel+1 :background ,zweilight-bg))))
