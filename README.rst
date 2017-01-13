@@ -2,7 +2,7 @@ Zweilight Theme for Emacs
 ######################
 This package provides a dark but colorful theme for Emacs. The colors have been
 picked carefully to provide a pleasant coding experience in darker environments,
-while stile maintaining good contrast and highlighting syntax constructs in a
+while still maintaining good contrast and highlighting syntax constructs in a
 particularly useful manner.
 
 .. image:: screenshots/zweilight-theme.png
