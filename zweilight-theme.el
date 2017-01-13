@@ -1246,36 +1246,6 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(vc-annotate-background ,zweilight-blue)
    ))
 
-;;; Rainbow Support
-
-(declare-function rainbow-mode 'rainbow-mode)
-(declare-function rainbow-colorize-by-assoc 'rainbow-mode)
-
-(defvar zweilight-add-font-lock-keywords nil
-  "Whether to add font-lock keywords for zweilight color names.
-In buffers visiting library `zweilight-theme.el' the zweilight
-specific keywords are always added.  In all other Emacs-Lisp
-buffers this variable controls whether this should be done.
-This requires library `rainbow-mode'.")
-
-(defvar zweilight-colors-font-lock-keywords nil)
-
-;; (defadvice rainbow-turn-on (after zweilight activate)
-;;   "Maybe also add font-lock keywords for zweilight colors."
-;;   (when (and (derived-mode-p 'emacs-lisp-mode)
-;;              (or zweilight-add-font-lock-keywords
-;;                  (equal (file-name-nondirectory (buffer-file-name))
-;;                         "zweilight-theme.el")))
-;;     (unless zweilight-colors-font-lock-keywords
-;;       (setq zweilight-colors-font-lock-keywords
-;;             `((,(regexp-opt (mapcar 'car zweilight-colors-alist) 'words)
-;;                (0 (rainbow-colorize-by-assoc zweilight-colors-alist))))))
-;;     (font-lock-add-keywords nil zweilight-colors-font-lock-keywords)))
-
-;; (defadvice rainbow-turn-off (after zweilight activate)
-;;   "Also remove font-lock keywords for zweilight colors."
-;;   (font-lock-remove-keywords nil zweilight-colors-font-lock-keywords))
-
 ;;; Footer
 
 ;;;###autoload
